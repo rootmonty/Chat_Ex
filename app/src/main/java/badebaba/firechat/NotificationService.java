@@ -31,6 +31,7 @@ public class NotificationService extends FirebaseMessagingService {
         Log.i(TAG, "Notification_MEssage" + remoteMessage.getNotification());
         Log.i(TAG, "Message_Content:" + remoteMessage.getData());
 
+       sendnotification(remoteMessage.getData().get("text"));
     }
 
     /*
@@ -47,12 +48,13 @@ public class NotificationService extends FirebaseMessagingService {
         Uri defaulturi = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         NotificationCompat.Builder notificationbuilder = new NotificationCompat.Builder(this);
         notificationbuilder.setContentTitle("FCM-Chat-Message")
+                .setSmallIcon(R.mipmap.ic_launcher)
                 .setContentText(message)
                 .setAutoCancel(true)
                 .setSound(defaulturi)
                 .setContentIntent(pendingIntent);
 
         NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        notificationManager.notify(0, notificationbuilder.build());
+        notificationManager.notify(1, notificationbuilder.build());
     }
 }

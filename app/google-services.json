@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "480061600835",
+    "firebase_url": "https://firechat-c0726.firebaseio.com",
+    "project_id": "firechat-c0726",
+    "storage_bucket": "firechat-c0726.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480061600835:android:4d973ce8611ae520",
+        "android_client_info": {
+          "package_name": "badebaba.firechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480061600835-e4guijjilok568qcq61kd35ecgr6b899.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_9NecE4vC9rR51sQHinY_ohprH4NdB7o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

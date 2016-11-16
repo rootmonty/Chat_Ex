@@ -4,14 +4,16 @@ public class Chat {
 
     private String message;
     private String author;
+    private String timestamp;
 
 
     private Chat() {
     }
 
-    Chat(String message, String author) {
+    Chat(String message, String author,String Time) {
         this.message = message;
         this.author = author;
+        this.timestamp = Time;
     }
 
     public String getMessage() {
@@ -21,4 +23,6 @@ public class Chat {
     public String getAuthor() {
         return author;
     }
+
+    public String getTimestamp(){return timestamp;}
 }
